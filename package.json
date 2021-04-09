@@ -1,26 +1,30 @@
 {
-  "name": "dictionary-es-morphology",
-  "version": "0.1.0",
-  "description": "EL objetivo es intentar crear un nuevo diccionario Hunspell español añadiendo la información para análisis morfológico.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/imigueldiaz/dictionary-es-morphology.git"
-  },
-  "keywords": [
-    "morphology",
-    "hunspell",
-    "nodehun",
-    "rla-es",
-    "dictionary"
-  ],
-  "author": "Iñaki de Miguel Diaz",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/imigueldiaz/dictionary-es-morphology/issues"
-  },
-  "homepage": "https://github.com/imigueldiaz/dictionary-es-morphology#readme"
+    "name": "dictionary-es-morphology",
+    "version": "0.1.0",
+    "description": "EL objetivo es intentar crear un nuevo diccionario Hunspell español añadiendo la información para análisis morfológico.",
+    "main": "./tools/addmorph.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/imigueldiaz/dictionary-es-morphology.git"
+    },
+    "keywords": [
+        "morphology",
+        "hunspell",
+        "nodehun",
+        "rla-es",
+        "dictionary"
+    ],
+    "author": "Iñaki de Miguel Diaz",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/imigueldiaz/dictionary-es-morphology/issues"
+    },
+    "homepage": "https://github.com/imigueldiaz/dictionary-es-morphology#readme",
+    "devDependencies": {
+        "nodehun": "^3.0.2"
+    },
+    "dependencies": {}
 }
