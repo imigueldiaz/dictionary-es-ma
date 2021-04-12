@@ -26,5 +26,8 @@
     "devDependencies": {
         "nodehun": "^3.0.2"
     },
-    "dependencies": {}
+    "dependencies": {
+        "adm-zip": "^0.5.5",
+        "rmfr": "^2.0.0"
+    }
 }
