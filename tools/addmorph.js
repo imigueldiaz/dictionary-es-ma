@@ -25,8 +25,20 @@ const descargarFuentes = async() => {
     zip.extractEntryTo(`${LOCALE}.dic`, "./work", true, true);
 
     zip = new Zip(path.join("./work", `${TAG}.zip`));
-    zip.extractEntryTo("rla-es-2.6/ortografia/palabras/", "./work", true, true);
-    zip.extractEntryTo("rla-es-2.6/ortografia/afijos/", "./work", true, true);
+    zip.extractEntryTo("rla-es-2.6/ortografia/palabras/", "./work/", true, true);
+    zip.extractEntryTo(
+        "rla-es-2.6/ortografia/afijos/afijos.txt",
+        "./work",
+        false,
+        true
+    );
+    zip.extractEntryTo(
+        `rla-es-2.6/ortografia/afijos/l10n/${LOCALE}/afijos.txt`,
+        "./work",
+        false,
+        true,
+        `afijos-${LOCALE}.txt`
+    );
 
     try {
         fs.unlink(path.join("./work", `${LOCALE}.oxt`));
